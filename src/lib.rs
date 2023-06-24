@@ -44,7 +44,7 @@ pub fn resolve_dependency_order(deps: Vec<Dep>) -> Vec<DepName> {
                 if resolved.contains(&transitive_dep.name) {
                     continue;
                 } else if stack.contains(&transitive_dep.name) {
-                    panic!("cyclic dependency error!");
+                    panic!("cyclic dependency error!: caused by {:#?}", curr);
                 }
                 stack.push(transitive_dep.name.to_owned());
                 dependency_graph
