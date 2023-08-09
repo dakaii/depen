@@ -12,7 +12,6 @@ impl DepName {
 #[derive(Debug, Hash, PartialEq, Eq, Clone)]
 pub struct Dep {
     pub name: DepName,
-    // I assumed the attribute below should be added even though it was not shown in the assignment prompt.
     pub transitive_deps: Vec<Dep>,
 }
 

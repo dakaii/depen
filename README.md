@@ -13,7 +13,7 @@
   <h3 align="center">Depen</h3>
 
   <p align="center">
-    An awesome solution for the dependency resolver assignment!
+    Topological Sort in Rust!
     <br />
     <a href="https://github.com/dakaii/depen/issues">Report Bug</a>
     ·
@@ -32,7 +32,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#additional-info">Additional Info</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -58,19 +57,6 @@
    ```sh
    cargo test
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- Additional Info -->
-
-## Additional Info
-
-1. Is function fallible? If so, under what circumstances should the function fail?
-Yes, the function will fail if there is a circular dependency, which can occur while traversing through transitive dependencies(i.e. dependencies of dependency). 
-
-2. What are the pros and cons of using recursive code?
-Recursion can, in some cases, make algorithms look simpler and enables programmers to create shorter and concise code; however, if not used properly, it can increase the memory usage significantly, and the function can raise a stack overflow error as a result. Recursive code is often harder to wrap your head around as well.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
